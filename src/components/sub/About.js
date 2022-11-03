@@ -22,9 +22,9 @@ export default function About() {
                             <h3>{data.name}</h3>
                             <p>{data.position}</p>
                             <ul className='icon-list'>
-                            <li><a href="http://facebook.com" ><FontAwesomeIcon icon={faFacebookF} /></a></li>
-                            <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
-                            <li><a href=""><FontAwesomeIcon icon={faTwitter} /></a></li>
+                            <li><a href="http://facebook.com" target="_blank" ><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                            <li><a href="http://instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                            <li><a href="http://twitter.com" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a></li>
                             </ul>  
                             <br />
                             {data.scr}
