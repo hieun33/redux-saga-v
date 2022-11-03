@@ -18,29 +18,37 @@ function Pics({ Scrolled, start }) {
     return (
         <>
             <main id="pics" className='myScroll'>
-                <p
+                {/* <p
                     style={{
-                        left: -50 + position,
+                        left: -200 + position,
                     }}
                 // style={
                 //     position >= 0
                 //         ? { left: 100 + position, }
                 //         : null
-                >Gallery</p>
+                >Gallery</p> */}
                 <h3
                     style={{
-                        left: 100 + position / 2,
+                        left: 150 + position / 2,
                     }}
-                >Gallery</h3>
+                >GALLERY</h3>
                     <ul>
                     {Pics.map((pic, idx)=>{
                         if(idx > 3) return;
-                        return (
+                        return (                            
                             <li key={pic.id} onClick={()=>{
                                 pop.current.open();
                                 setIndex(idx);
                             }}>
-                                <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} alt="" />
+
+                                
+                                <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} alt={pic.title}/>
+                                
+                                <h4>{pic.title}</h4> 
+                                <p>@for wolf</p>   
+                                
+                                               
+                                
                             </li>
                         )
                     })}
