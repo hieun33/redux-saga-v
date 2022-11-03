@@ -10,8 +10,8 @@ export default function Header(props) {
 
     let url = '';
     props.type === 'main'
-        ? (url = process.env.PUBLIC_URL + '/img/logo_w.png')
-        : (url = process.env.PUBLIC_URL + '/img/logo_b.png');
+        ? (url = process.env.PUBLIC_URL + '/img/logo_b.jpg')
+        : (url = process.env.PUBLIC_URL + '/img/logo_b.jpg')
 
 
     return (
@@ -24,8 +24,8 @@ export default function Header(props) {
                 </h1>
                 <ul id="gnb">
                     <li>
-                        <NavLink to='/department' activeStyle={active}>
-                            Department
+                        <NavLink to='/About' activeStyle={active}>
+                            About
                         </NavLink>
 
                     </li>
@@ -50,11 +50,11 @@ export default function Header(props) {
                             Location
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to='/member' activeStyle={active}>
                             Member
                         </NavLink>
-                    </li>
+                    </li> */}
                 </ul>
                 {/* 토글 버튼 클릭시 참조된 토글함수 호출 */}
                 <FontAwesomeIcon icon={faBars} onClick={() => menu.current.toggle()} />

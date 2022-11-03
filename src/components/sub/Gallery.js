@@ -9,7 +9,7 @@ export default function Gallery() {
 	const dispatch = useDispatch();
 	const Items = useSelector(store => store.flickrReducer.flickr);
 	const masonryOptions = { transitionDuration: '0.5s' };
-	const [Opt, setOpt] = useState({ type: 'user', user: '164021883@N04' });
+	const [Opt, setOpt] = useState({ type: 'user', user: '196629878@N05' });
 	const [Loading, setLoading] = useState(true);
 	const [EnableClick, setEnableClick] = useState(true);
 	const [Index, setIndex] = useState(0);
@@ -47,7 +47,7 @@ export default function Gallery() {
 		setEnableClick(false);
 		setLoading(true);
 		frame.current.classList.remove('on');
-		setOpt({ type: 'user', user: '164021883@N04' });
+		setOpt({ type: 'user', user: '196629878@N05' });
 
 	}
 

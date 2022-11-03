@@ -1,3 +1,11 @@
+/**
+  takeLatest(제일 마지막 요청만 수행), takeEvery(들어오는 모든 요청을 전부 수행)
+  all (saga 관련 메서드들을 비동기적으로 호출)
+  put (saga에서 만들어진 액션객체를 리듀서에 전달, 기존 dispatch랑 동일)
+  fork (saga 명령어 실행함수)
+  call (saga에서 api관련 axios함수를 호출할 때 쓰는 함수, 두번째 인수값 전달가능)
+*/
+
 import { takeLatest, all, put, fork, call } from 'redux-saga/effects';
 import { getFlickr, getYoutube, getMembers } from './api';
 import * as types from './actionType';
@@ -45,6 +53,7 @@ function* callMembers() {
   yield takeLatest(types.MEMBERS.start, returnMembers);
 }
 
+// store.js에 의해 reducer에 미들웨어로 적용할 rootSaga함수 생성
 export default function* rootSaga() {
   yield all([fork(callFlickr), fork(callYoutube), fork(callMembers)]);
 }

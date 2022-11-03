@@ -6,16 +6,17 @@
 	z-index: 3;
 
 	li {
-		width: 10px;
-		height: 10px;
-		border: 1px solid #111;
+		width: 13px;
+		height: 13px;
+		border: 1px solid rgb(37, 61, 52);
+		border-radius: 40px;
 		background: #fff;
 		margin: 20px;
 		cursor: pointer;
 		transition: 0.5s;
 		&.on {
-			height: 100px;
-			background: #111;
+			height: 50px;
+			background: rgb(157, 202, 171);
 			border: #fff;
 		}
 	}

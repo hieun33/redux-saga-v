@@ -12,12 +12,13 @@ import Footer from './components/common/Footer';
 import Main from './components/main/Main';
 
 //sub
+import About from './components/sub/About';
 import Community from './components/sub/Community';
-import Department from './components/sub/Department';
 import Gallery from './components/sub/Gallery';
+import Youtube from './components/sub/Youtube';
 import Location from './components/sub/Location';
 import Member from './components/sub/Member';
-import Youtube from './components/sub/Youtube';
+
 import * as types from './redux/actionType';
 
 import './scss/style.scss';
@@ -27,7 +28,7 @@ function App() {
 	useEffect(() => {
 		dispatch({ type: types.MEMBERS.start });
 		dispatch({ type: types.YOUTUBE.start })
-		dispatch({ type: types.FLICKR.start, Opt: { type: 'user', user: '164021883@N04' } })
+		dispatch({ type: types.FLICKR.start, Opt: { type: 'user', user: '196629878@N05' } })
 	}, []);
 
 	return (
@@ -39,7 +40,7 @@ function App() {
 			</Switch>
 
 
-			<Route path='/department' component={Department} />
+			<Route path='/about' component={About} />
 			<Route path='/community' component={Community} />
 			<Route path='/gallery' component={Gallery} />
 			<Route path='/location' component={Location} />

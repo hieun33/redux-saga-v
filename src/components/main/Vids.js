@@ -12,7 +12,7 @@ function Vids() {
 	const sw = useRef(null);
 	const [Index, setIndex] = useState(0);
 	const { youtube } = useSelector((store) => store.youtubeReducer);
-	console.log(youtube)
+	
 
 	return (
 		<>

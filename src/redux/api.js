@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+//플리커
 export const getFlickr = async (opt) => {
   const key = '4612601b324a2fe5a1f5f7402bf8d87a';
   const method_interest = "flickr.interestingness.getList";
@@ -21,15 +22,20 @@ export const getFlickr = async (opt) => {
   return await axios.get(url);
 };
 
+
+//유투브
 export const getYoutube = async () => {
-  const key = 'AIzaSyCMfwz2923Ts1sPkx0J7I0mnMHPmYKw4vo';
-  const playlist = "PLHtvRFLN5v-VD95TBpr5Dh2zguWCjjmMG";
-  const num = 6;
-  const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlist}&maxResults=${num}`;
+   const key = 'AIzaSyAKqZ1Dx9awi1lCS84qziASeQYZJqLxLSM';
+   const playlist = "PLcwo0_Iyc0sv6RPe5ZBKAKeLe6kBTN7bF";
+   const num = 6;
+    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playlist}&maxResults=${num}`;
+
 
   return await axios.get(url);
 }
 
+
+//멤버스
 export const getMembers = async () => {
   const url = process.env.PUBLIC_URL + '/DB/members.json';
   return await axios.get(url);

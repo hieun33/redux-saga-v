@@ -7,6 +7,10 @@ import Visual from "./Visual";
 import Btns from "./Btns";
 import Anime from "../../asset/Anime";
 
+import Intro from "./Intro";
+import Banner from "./Banner";
+import Product from "./Product";
+
 function Main() {
     const main = useRef(null);
     const pos = useRef([]);
@@ -67,7 +71,10 @@ function Main() {
         <main ref={main}>
             <Header type={'main'} />
             <Visual />
-            <News />
+            <Intro />
+            <Banner /> 
+            <Product />
+            {/* <News /> */}
             <Pics Scrolled={Scrolled} start={pos.current[2]} />
             <Vids />
             <Btns setIndex={setIndex} />

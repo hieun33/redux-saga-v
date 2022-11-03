@@ -1,11 +1,13 @@
 .content {
+	
 	figure {
 		width: 100%;
 		height: 300px;
-		background: #bbb;
+		background: #fff;
 		opacity: 0;
 		transition: 1s;
-		overflow: hidden;
+		overflow: hidden;	
+		display: none;	
 
 		img {
 			width: 100%;
@@ -23,18 +25,23 @@
 		//transition: opacity 0.5s, transform 1s;
 		transition: 0.5s;
 		h1 {
-			font: normal 60px/1 'work sans';
-			color: #111;
-			margin-bottom: 70px;
-			&::after {
-				content: '';
-				display: block;
-				width: 60px;
-				height: 1px;
-				background: #555;
-				margin-top: 20px;
-			}
+			font: 400 70px/1 'Open Sans';
+			color: #333;
+			margin: 50px 0;
+			// &::after {
+			// 	content: '';
+			// 	display: block;
+			// 	display: none;
+			// 	width: 50%;
+			// 	height: 1px;
+			// 	background: #fff;
+			// 	margin-top: 20px;
+			// }
 		}
+		p{
+			font: 20px/1.2 'work sans';
+		}
+		
 	}
 	&.on {
 		figure {
@@ -46,7 +53,6 @@
 		}
 	}
 }
-
 @media screen and (max-width: $tablet) {
 	.content {
 		figure {
