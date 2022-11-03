@@ -80,6 +80,7 @@ export default function Location(){
         });
     },[Index]); //<--- 기존 컴포넌트가 처음 마운트 되었을 때만 지도를 출력하던 방식에서, Index 가 변경될때 지도가 다시 렌더링 되는 방식으로 바꿈
 
+    
     //트래픽 토글전용 useEffect
     useEffect(()=>{
         if(!Location) return;
