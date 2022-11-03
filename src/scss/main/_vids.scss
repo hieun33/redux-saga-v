@@ -1,78 +1,94 @@
 #vids {
 	width: 100%;
-	height: 100vh;
-	background: #566f6b;
+	
+	background: #111;
 	position: relative;
 
 	.swiper {
 		height: 100%;
-		padding: 20vh 0px;
+		padding: 5vh 0px 10vh;
+		
+		
 
 		.swiper-slide {
-			width: 600px;
-
+			width: 600px;	
 			.inner {
 				width: 100%;
-				height: 100%;
-				padding: 30px;
-				background: #fff;
+				// height: 100%;
+				// padding: px;
+				// background: #fff;
+				// border: 1px solid #000;
 				opacity: 0.5;
 				transform: scale(0.8);
-				transition: opacity 0.5s, transform 0.5s;
+				transition: opacity 0.7s, transform 0.7s;
+				position: relative;
+				background: #fff;
 
 				.pic {
 					width: 100%;
-					height: 300px;
+					height: 320px;
 					overflow: hidden;
-					margin-bottom: 20px;
-					cursor: pointer;
+					cursor: pointer;	
+					background: #fff;				
 
 					img {
 						width: 100%;
 						height: 100%;
-						object-fit: cover;
+						object-fit: cover;	
+						&:hover{filter: brightness(1.1);}	
 					}
 				}
 
 				h2 {
-					font: normal 40px/1 'work sans';
-					color: #333;
+					width: 300px;
+					padding: 30px;
+					font: normal 20px/1.2 'Nanum Myeongjo';
+					color: #fff;
+					background-color: rgba(0,0,0,0.9);
+					position: absolute;
+					top: 80%; right: -10%;
+					opacity: 0;
+
 				}
 			}
 			&.swiper-slide-active {
 				.inner {
 					opacity: 1;
 					transform: scale(1);
+
+					h2{
+						opacity: 1;
+					}
 				}
 			}
 		}
 
-		.swiper-pagination {
-			bottom: 40px;
-			filter: grayscale(1) brightness(4);
-			z-index: 5;
+		// .swiper-pagination {
+		// 	bottom: 40px;
+		// 	filter: grayscale(1) brightness(4);
+		// 	z-index: 5;
 
-			.swiper-pagination-bullet {
-				border-radius: 4px;
-				transition: 0.5s;
-			}
+		// 	.swiper-pagination-bullet {
+		// 		border-radius: 4px;
+		// 		transition: 0.7s;
+		// 	}
 
-			.swiper-pagination-bullet-active {
-				width: 80px;
-			}
-		}
+		// 	.swiper-pagination-bullet-active {
+		// 		width: 80px;
+		// 	}
+		// }
 
 		.swiper-button-prev,
 		.swiper-button-next {
 			top: auto;
-			bottom: 30px;
+			bottom: 30px; right: 100px;
 			transform: scale(0.5);
 			filter: grayscale(1) brightness(4);
 			z-index: 6;
 		}
 		.swiper-button-prev {
 			left: auto;
-			right: 60px;
+			right: 150px;
 		}
 	}
 }

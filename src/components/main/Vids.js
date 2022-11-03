@@ -20,7 +20,7 @@ function Vids() {
 				{youtube.length !== 0 && (
 					<Swiper
 						ref={sw}
-						modules={[Pagination, Navigation, Autoplay]}
+						modules={[Navigation, Autoplay]}
 						pagination={
 							{
 								clickable: true,
@@ -32,7 +32,7 @@ function Vids() {
 						slidesPerView={'auto'}
 						centeredSlides={true}
 						autoplay={{
-							delay: 2500,
+							delay: 3500,
 							disableOnInteraction: true,
 						}}
 						//min-width 값을 설정해서 브라우저 폭마다 swiper 옵션설정 변경가능

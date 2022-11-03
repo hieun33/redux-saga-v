@@ -74,9 +74,10 @@ function Main() {
             <Intro />
             <Banner /> 
             <Product />
+            <Vids />
             {/* <News /> */}
             <Pics Scrolled={Scrolled} start={pos.current[2]} />
-            <Vids />
+            
             <Btns setIndex={setIndex} />
         </main>
     );
