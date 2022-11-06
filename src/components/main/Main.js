@@ -9,7 +9,7 @@ import Anime from "../../asset/Anime";
 
 import Intro from "./Intro";
 import Banner from "./Banner";
-import Product from "./Product";
+import Pro from "./Pro";
 
 function Main() {
     const main = useRef(null);
@@ -73,7 +73,7 @@ function Main() {
             <Visual />
             <Intro />
             <Banner /> 
-            <Product />
+            <Pro />
             
             {/* <News /> */}
             <Pics Scrolled={Scrolled} start={pos.current[2]} />

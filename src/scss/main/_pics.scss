@@ -10,10 +10,9 @@
 	display: flex;
 	align-content: center;
 	flex-wrap: wrap;
-
 	
 	h3 {
-		font: bold 100px/1 'Nanum Myeongjo';
+		font: bold 100px/1 'Merriweather';
 		letter-spacing: 0.5px;
 		color: #fff;
 		position: absolute;
@@ -23,12 +22,11 @@
 	}
 	ul {
 		width: 100%;
-		height: 400px;
-		
+		height: 80%;		
 		display: flex;
 		flex-wrap: wrap;		
 		gap: 50px;
-		justify-content: space-around;
+		justify-content: center;
 		padding-top: 0px;
 
 		li{
@@ -46,7 +44,7 @@
 			h4{
 				padding-top: 220px;
 				color:#000;
-				font: 22px "Nanum Myeongjo";				
+				font: 22px "Merriweather";				
 				padding-top: 40px;
 				
 				&::before{
@@ -62,7 +60,7 @@
 			}
 			p{ 
 				padding-top: 30px;
-				font: 18px "Nanum Myeongjo";
+				font: 18px "Merriweathers";
 				text-align: end; 
 
 				&::before{
@@ -84,4 +82,28 @@
 	}
 }
 
-//Nanum Myeongjo
+@media screen and (min-width: $tablet) {
+	#pics{
+		height: 100%;
+		h3{
+			font-size: 80px;
+		}
+		ul{
+			height: 100%;
+			margin-top: 5%
+			
+       
+      
+}}}	
+
+@media screen and (max-width: $mobile) {
+	#pics {
+		height: 100%;
+	  p {
+		font-size: 100px;
+	  }
+	  h3 {
+		font-size: 80px;
+	  }
+	}
+  }

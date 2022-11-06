@@ -18,18 +18,9 @@ function Pics({ Scrolled, start }) {
     return (
         <>
             <main id="pics" className='myScroll'>
-                {/* <p
+              <h3
                     style={{
-                        left: -200 + position,
-                    }}
-                // style={
-                //     position >= 0
-                //         ? { left: 100 + position, }
-                //         : null
-                >Gallery</p> */}
-                <h3
-                    style={{
-                        left: 150 + position / 2,
+                        left: 100
                     }}
                 >GALLERY</h3>
                     <ul>
@@ -41,9 +32,7 @@ function Pics({ Scrolled, start }) {
                                 setIndex(idx);
                             }}>
 
-                                
                                 <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} alt={pic.title}/>
-                                
                                 <h4>{pic.title}</h4> 
                                 <p>@for wolf</p>   
                                 

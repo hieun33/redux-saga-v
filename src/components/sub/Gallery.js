@@ -118,7 +118,7 @@ export default function Gallery() {
 												}}
 											>
 												<img
-													src={`https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`}
+													src={`https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_b.jpg`}
 													alt={item.title} />
 											</div>
 											<h2>{item.title}</h2>
@@ -149,6 +149,7 @@ export default function Gallery() {
 					<img
 						src={`https://live.staticflickr.com/${Items[Index].server}/${Items[Index].id}_${Items[Index].secret}_b.jpg`}
 						alt={Items[Index].title} />
+						
 				)
 
 				}

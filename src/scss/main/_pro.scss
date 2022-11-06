@@ -9,7 +9,7 @@
         color: #b4bdba;
         letter-spacing: 1px;
         text-align: center;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
     }    
     .swiper{
         height: 100%;
@@ -53,7 +53,7 @@
             }
         }
         .swiper-pagination{
-			bottom: 60px;
+			bottom: 50px;
 			filter: grayscale(1) brightness(1);
             
 			z-index: 3;
@@ -78,3 +78,10 @@
     }
     
 }
+
+@media screen and (min-width: 1170px) {
+	#pro{
+        
+      
+}}
+    

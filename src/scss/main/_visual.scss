@@ -59,4 +59,12 @@
 	
 }
 
-//#566f6b Open Sans
+@media screen and (max-width: $tablet) {
+	#visual {
+		
+			img{
+				opacity: 0;
+			}
+			
+	
+}}

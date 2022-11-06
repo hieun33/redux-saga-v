@@ -1,8 +1,8 @@
 import { Route, Switch } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { setYoutube, setMembers } from './redux/actionType';
-import axios from 'axios';
+// import { setYoutube, setMembers } from './redux/actionType';
+// import axios from 'axios';
 
 //common
 import Header from './components/common/Header';
@@ -18,6 +18,7 @@ import Gallery from './components/sub/Gallery';
 import Youtube from './components/sub/Youtube';
 import Location from './components/sub/Location';
 import Member from './components/sub/Member';
+import Product from './components/sub/Product';
 
 import * as types from './redux/actionType';
 
@@ -46,6 +47,7 @@ function App() {
 			<Route path='/location' component={Location} />
 			<Route path='/member' component={Member} />
 			<Route path='/youtube' component={Youtube} />
+			<Route path='/product' component={Product} />
 
 			<Footer />
 		</>

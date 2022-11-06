@@ -43,7 +43,11 @@ const Menu = forwardRef((props, ref) => {
 							<NavLink to='/about' activeStyle={active}>
 								About
 							</NavLink>
-
+						</li>
+						<li>
+							<NavLink to='/product' activeStyle={active}>
+								Product
+							</NavLink>
 						</li>
 						<li>
 							<NavLink to='/community' activeStyle={active}>
@@ -54,7 +58,6 @@ const Menu = forwardRef((props, ref) => {
 							<NavLink to='/gallery' activeStyle={active}>
 								Gallery
 							</NavLink>
-
 						</li>
 						<li>
 							<NavLink to='/youtube' activeStyle={active}>

@@ -27,7 +27,11 @@ export default function Header(props) {
                         <NavLink to='/About' activeStyle={active}>
                             About
                         </NavLink>
-
+                    </li>
+                    <li>
+                        <NavLink to='/product' activeStyle={active}>
+                            Product
+                        </NavLink>
                     </li>
                     <li>
                         <NavLink to='/community' activeStyle={active}>
