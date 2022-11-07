@@ -20,21 +20,22 @@ function Pics({ Scrolled, start }) {
             <main id="pics" className='myScroll'>
               <h3
                     style={{
-                        left: 100
+                        left: 0 + position/ 2
+                        
                     }}
                 >GALLERY</h3>
                     <ul>
                     {Pics.map((pic, idx)=>{
-                        if(idx > 3) return;
+                        if(idx > 6) return;
                         return (                            
                             <li key={pic.id} onClick={()=>{
                                 pop.current.open();
                                 setIndex(idx);
                             }}>
 
-                                <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} alt={pic.title}/>
-                                <h4>{pic.title}</h4> 
-                                <p>@for wolf</p>   
+                                <img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_b.jpg`} alt={pic.title}/>
+                                {/* <h4>{pic.title}</h4> 
+                                <p>@for wolf</p>    */}
                                 
                                                
                                 

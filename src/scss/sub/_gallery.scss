@@ -1,15 +1,11 @@
 body{
-   
-    
     
     background-color: #fff;
     .Gallery{
-        > .inner {
-				
+        > .inner {				
             >h1{
                 display: block;
-                padding-bottom: 150px;
-                font-size: 110px;
+                padding-bottom: 150px;                
                 &::after {
                     content: '';
                     display: block;
@@ -20,11 +16,10 @@ body{
                     background: #333;
                     margin: 50px 40px;
                     content: 'OUR PRODUCT';
-                    font-size: 70px;
-
-                    
+                    font-size: 60px;
                 }}}
         background-color: #fff;
+
         .loading{
             position: absolute;
             top: 0;
@@ -86,20 +81,25 @@ body{
             transition: all 0.5s;
             
             &.on{
-                transform: translateX(0px);
+                transform: translate(40px,40px);
                 opacity: 1;
                  background-color: #fff;
+                 
     
             }
             &::after{
                 content: ''; display: block; clear: both;
             }
             article{
-                width: 32%; 
-                padding: 20px; 
-                
+                //transform: translateX(0px) rotate(30deg);
+                width: 25%; 
+                padding: 1%;
                 float: left; //왜 플롯을 쓰나요? 플렉스 안쓰고? masonry라는 컴포넌트를 사용하기 때문에 플렉스대신 플롯을 쓴다.
                 // transform: rotate(20deg);
+                transition: 0.7s;
+                &:hover{
+                    transform: translateX(0px) rotate(15deg);
+                }
                 
                 .inner{
                     width: 100%;
