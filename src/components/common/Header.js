@@ -33,11 +33,11 @@ export default function Header(props) {
                             Brand
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to='/community' activeStyle={active}>
                             Community
                         </NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <NavLink to='/gallery' activeStyle={active}>
                             Gallery

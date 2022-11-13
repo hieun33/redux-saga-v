@@ -16,7 +16,7 @@
             "name": "Emily coco",
             "position": "UI Designer",
             "pic": "member3.jpg",
-            "scr":"She is working hard to realize a great design. After graduating from an art-related department, I worked for a number of companies in design-related work, and now I am working as a ui designer at the current company."
+            "scr":"She is working hard to realize a great design. After graduating from an art-related department, I worked for a number of companies in design-related work."
         },
         {
             "name": "James Arthur",
@@ -25,9 +25,33 @@
             "scr":"We are trying to implement a user-centered UI. We are doing our best to implement the design we received from the designer. He is still studying today for the growth of himself and the company."
         },
         {
-            "name": "Sara Bareilles",
+            "name": "grace Getta",
             "position": "Back-end Engineer",
             "pic": "member5.jpg",
+            "scr":"Graduated from the Department of Computer Science. She currently manages three companies as well as the company. We are working day and night to manage the site. Thank you for reading."
+        },
+        {
+            "name": "Jane kin",
+            "position": "Vice President",
+            "pic": "member6.jpg",
+            "scr":"For the sake of the company, we help the CEO to supplement and promote the business. He runs the company with passion."
+        },
+        {
+            "name": "David Getta",
+            "position": "UI Designer",
+            "pic": "member7.jpg",
+            "scr":"She is working hard to realize a great design. now I am working as a ui designer at the current company.We are working day and night to manage the site."
+        },
+        {
+            "name": "James Arthur",
+            "position": "Front-end Engineer",
+            "pic": "member8.jpg",
+            "scr":"We are trying to implement a user-centered UI. . He is still studying today for the growth of himself and the company."
+        },
+        {
+            "name": "Sara Bareilles",
+            "position": "Back-end Engineer",
+            "pic": "member9.jpg",
             "scr":"Graduated from the Department of Computer Science. She currently manages three companies as well as the company. We are working day and night to manage the site."
         }
         

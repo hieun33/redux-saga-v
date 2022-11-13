@@ -18,15 +18,24 @@ function Pics({ Scrolled, start }) {
     return (
         <>
             <main id="pics" className='myScroll'>
+                 <p
+                    // style={{
+                    //     left: -500 + position
+                    // }}
+                style={
+                    position >= 0
+                        ? { left:  -900 + position }
+                        : null}
+                >GALLERY</p>
               <h3
                     style={{
-                        left: 0 + position/ 2
+                        left: -500 + position/ 2
                         
                     }}
                 >GALLERY</h3>
                     <ul>
                     {Pics.map((pic, idx)=>{
-                        if(idx > 6) return;
+                        if(idx > 7) return;
                         return (                            
                             <li key={pic.id} onClick={()=>{
                                 pop.current.open();

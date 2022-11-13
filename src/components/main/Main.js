@@ -72,11 +72,12 @@ function Main() {
             <Header type={'main'} />
             <Visual />
             <Intro />
-            <Banner /> 
+            <Banner />           
+            
             <Pro />
             
             {/* <News /> */}
-            <Pics Scrolled={Scrolled} start={pos.current[2]} />
+            <Pics Scrolled={Scrolled} start={pos.current[2]} />           
             <Vids />
             <Btns setIndex={setIndex} />
         </main>

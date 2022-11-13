@@ -14,12 +14,14 @@ export default function Brand() {
                 <NavLink to='/Brand'>BRAND</NavLink>
         </div> */}
              <h2>We made cosmetics suitable for various skin types using unique ingredients extracted from blue tangerines and barley. The extract was extracted over several stages of safe, fresh and diverse experiments. Stability and certified components that have passed several stages of experimentation. It can protect both your health and skin safely.</h2>
-            <div className="inner">
+            <div className="wrap">
         
              <div className="section">                    
-                     <img src={process.env.PUBLIC_URL + '/brand/t3.jpg'} alt="test3" />
-                     <img src={process.env.PUBLIC_URL + '/brand/t4.jpg'} alt="test4" />
-                     <img src={process.env.PUBLIC_URL + '/brand/t6.jpg'} alt="test6" />  
+                    <picture>
+                         <img src={process.env.PUBLIC_URL + '/brand/t3.jpg'} alt="test3" />
+                         <img src={process.env.PUBLIC_URL + '/brand/t4.jpg'} alt="test4" />
+                         <img src={process.env.PUBLIC_URL + '/brand/t6.jpg'} alt="test6" />  
+                    </picture>
                 <span></span>
 
              </div>

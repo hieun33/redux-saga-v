@@ -34,7 +34,7 @@ const Menu = forwardRef((props, ref) => {
 				>
 					<h1>
 						<Link to='/'>
-							<img src={process.env.PUBLIC_URL + '/img/logo_w.png'} alt="logo" />
+							<img src={process.env.PUBLIC_URL + '/img/logo_f.jpg'} alt="logo" />
 						</Link>
 					</h1>
 

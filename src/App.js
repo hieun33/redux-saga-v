@@ -17,7 +17,7 @@ import Community from './components/sub/Community';
 import Gallery from './components/sub/Gallery';
 import Youtube from './components/sub/Youtube';
 import Location from './components/sub/Location';
-import Member from './components/sub/Member';
+import Join from './components/sub/Join';
 import Brand from './components/sub/Brand';
 
 import * as types from './redux/actionType';
@@ -45,7 +45,7 @@ function App() {
 			<Route path='/community' component={Community} />
 			<Route path='/gallery' component={Gallery} />
 			<Route path='/location' component={Location} />
-			<Route path='/member' component={Member} />
+			<Route path='/join' component={Join} />
 			<Route path='/youtube' component={Youtube} />
 			<Route path='/brand' component={Brand} />
 

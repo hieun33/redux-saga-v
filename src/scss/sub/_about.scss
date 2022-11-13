@@ -4,14 +4,11 @@
 	.Btn{
 		position:absolute;
 		top: -50px; right: 0%;
-		padding: 50px;
-		
-		
+		padding: 50px;	
 		a{
 			padding: 20px;
 			font: bold 25px 'open sans';
-			color: #222;
-			
+			color: #222;			
 		}
 	}
 	
@@ -21,7 +18,7 @@
 		padding: 30px 70px;
 		width: 50%;
 		position: absolute;
-		top: 8%;
+		top: 9%;
 		right: 0%;
 	}
 	
@@ -56,7 +53,7 @@
 				background: #eee;
 				position:absolute;
 				left: 12%;
-				top: 4%;
+				top: 3%;
 				z-index: -33;
 			}	
 			
@@ -71,7 +68,7 @@
 			width: 25%;
 			float: left;
 			padding: 20px;
-			margin-bottom: 70px;
+			margin-bottom: 30px;
 			
 			&::after {
 				content: '';
@@ -98,11 +95,19 @@
 					}
 				}
 			}
+			&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(9){
+				margin-top: 20px;
+				float: left;
+				.inner{
+					.pic{
+						height: 300px;
+					}
+				}
+				
+			}
 						
 			>.inner {
 				width: 100%;
-				
-
 				
 				.pic {
 					width: 100%;
@@ -118,16 +123,10 @@
 					img {
 						width: 100%;
 						height: 100%;
-						object-fit: cover;
-						
-						
-					}			
-					
+						object-fit: cover;	
+					}	
 				}
-
-				.int{
-					
-
+				.int{		
 					h3{
 						font: bold 25px/1.5 'open sans';					
 						letter-spacing: 2px;
@@ -142,9 +141,9 @@
 					ul{
 						display: flex;
 						justify-content: end;
-						padding-left: 5px;
+						
 						li{
-							
+							margin-left: 3px;
 							a{
 								color: #333;
 							}
@@ -154,23 +153,42 @@
 				}								
 			}
 		}
-
-		
-		
-	}
-	
+	}	
 }
 
 
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: 1250px) {
 	.About {
-		> .inner {
+		margin-left:70px;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		> .inner {			
+			h1{ margin: 0px }
+			h2{
+				display: none;
+			}
 			article {
 				width: 50%;
-				margin-bottom: 40px;
+				padding: 20px;
+				&:nth-of-type(1){
+					width: 80%;
+					.inner{
+						.pic{
+							width: 100%;
+							height: 500px;}
+						.int{
+							width: 60%;
+							left: 70%;
+						}
+					}
+				}
 				.inner {
+					margin: 20px;
+					padding: 20px;
+
 					.pic {
-						height: 260px;
+						height: 300px;
 					}
 				}
 			}
@@ -178,15 +196,62 @@
 	}
 }
 
-@media screen and (max-width: $mobile) {
+
+@media screen and (max-width: 890px) {
 	.About {
 		> .inner {
+			h1{ 
+				&::before{
+				display: none;
+			}}
+			h2{display: none;}
 			article {
-				width: 100%;
-				margin-bottom: 30px;
+				width: 80%;
+				
+				&:nth-of-type(1){
+					width: 80%;
+					.inner{
+						.pic{height: 500px;}
+						.int{
+							width: 70%;
+						}
+					}
+				}
 				.inner {
+					margin: 20px;
+					padding: 20px;
+					
 					.pic {
-						height: 200px;
+						height: 300px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 720px) {
+	.About {
+		width: 80%;
+		> .inner {		
+			
+			article {
+				
+				&:nth-of-type(1){
+					.inner{
+						
+						.int{
+							width: 100%;
+							position: static;
+						}
+					}
+				}
+				.inner {
+					margin: 10px;
+					padding: 10px;			
+					.int{						
+						span{
+							display: none;
+						}
 					}
 				}
 			}

@@ -13,6 +13,7 @@
 		color: #fff;
 		position: absolute;
 		top: 40%; left: 10%;
+		margin-bottom: 10px;
 		
 	}
 	p{
@@ -27,24 +28,30 @@
 		align-content: flex-start;
 		position: absolute;
 		top: 70%; left: 10%;
+		color: #fff;
 		
 
-		a{
+		li{
 			cursor: pointer;
 			height: 45px;
 			border: 2px solid #fff;
 			border-radius: 30px;
-			padding: 15px 30px;
+			padding: 13px 30px 35px;
 			margin-right: 20px;
-			font: 11px/1.2 'Open Sans';
-			letter-spacing: 1px;
-			color: #fff;		
+			&:hover{
+				background-color: #Fff;
+				a{color: #15332b; z-index: 2;}
+			}
+			a{
+				font: bold 14px 'open sans';
+				letter-spacing: 1px;
+				color: #fff;	
+				
+			}
+			
 
 		}
-		&.on{
-			background: #fff;
-			color: #566f6b;
-		}
+		
 	}
 	img{
 		width: 450px; 
@@ -60,11 +67,29 @@
 }
 
 @media screen and (max-width: $tablet) {
+	#visual {		
+		height: 700px;
+			img{z-index:-5;}		
+}}
+
+@media screen and (max-width: $tablet_s) {
 	#visual {
-		
-			img{
-				opacity: 0;
-			}
-			
+		height: 600px;
+		h1{font-size: 40px;	}
+		p{font-size: 14px;	}	
+}}
+@media screen and (max-width: 678px) {
+	#visual {
+		height: 500px;
+		h1{font-size: 35px;}
+		p{display: none;	}
+	
+}}
+
+@media screen and (max-width: $mobile) {
+	#visual {
+		height: 500px;
+		h1{font-size: 20px;}
+		p{display: none;	}
 	
 }}

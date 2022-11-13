@@ -1,26 +1,31 @@
 #mobileMenu {
-	width: 320px;
+	width: 280px;
 	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #111;
-	padding: 50px;
+	background: #e7e7e7;
+	
 	z-index: 10;
 
 	h1 {
 		width: 100%;
 
 		img {
-			width: 100%;
+			width: 280px;
 			margin-bottom: 50px;
 		}
 	}
 
 	ul li a {
+		padding: 20px 50px ;		
+
 		display: block;
 		height: 50px;
 		font: 16px/50px 'open sans';
-		color: #bbb;
+		color: #555;
+		&:hover{
+			color: orange;
+		}
 	}
 }
